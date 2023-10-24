@@ -1,0 +1,14 @@
+.headerTop {
+    background-color: var(--gray-color);
+    color: var(--white-color);
+}
+.headerTop i {
+    color: var(--main-color);
+    margin-right: 10px;
+}
+@media screen and (max-width: 767px) {
+    .headerTop {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

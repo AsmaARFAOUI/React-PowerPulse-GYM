@@ -1,0 +1,35 @@
+.aPropos h3 {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.aPropos hr {
+    color: var(--secondary-color);
+}
+.aProposBtn {
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 0;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.aProposBtn:hover {
+    background-color: var(--white-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+@media screen and (max-width: 768px) {
+   .aProposBtn {
+     margin-bottom: 10px;
+   }
+   .aPropos img {
+    width: 100vw;
+   }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .aProposBtn {
+        margin-bottom: 15px;
+    }
+    .aPropos img {
+        width: 100vw;
+    }
+}

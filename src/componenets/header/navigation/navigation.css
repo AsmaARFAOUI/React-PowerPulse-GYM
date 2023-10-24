@@ -1,0 +1,113 @@
+.navigation {
+    position: relative;
+    background-image: url('../../../assets/img/heroImg.jpg');
+    background-size: cover;
+}
+.navigation::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.logo {
+    font-size: 20px;
+    font-weight: bold;  
+}
+.heroLinks {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+}
+.heroLink:hover {
+    background-color: var(--main-color);
+}
+.heroContent {
+   position: relative;
+}
+.heroContent h2 {
+    font-size: 50px;
+}
+.heroContent p {
+    margin-top: 20px;
+}
+.heroBtn {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 0;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 1000;
+}
+.readMoreBtn{
+    background-color: var(--white-color);
+    border: 1px solid var(--white-color);
+    color: var(--gray-color);
+}
+.readMoreBtn:hover{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: var(--white-color);
+}
+.contactUsBtn{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+.contactUsBtn:hover{
+    background-color: var(--white-color);
+    border: 1px solid var(--main-color);
+    color: var(--gray-color);
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        padding: 20px 10px;
+    }
+    .heroContent {
+        margin-top: 80px;
+    }
+    .heroContent h2 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .heroBtn {
+        margin-top: 40px;
+        margin-bottom: 90px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .navigation {
+        padding: 10px;
+    }
+    .heroContent {
+        margin-top: 50px;
+    }
+    .heroContent h2 {
+        font-size: 34px;
+        font-weight: bolder;
+    } 
+    .heroContent p {
+        font-size: 25px;
+    } 
+    .heroBtn {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .navigation {
+        height: 93vh;
+        padding: 20px 60px 100px;
+    }
+    .heroContent {
+        margin-top: 100px;
+    }
+    .heroContent p {
+        font-size: 30px;
+    }
+    .heroBtn {
+        width: 18%;
+    }
+}

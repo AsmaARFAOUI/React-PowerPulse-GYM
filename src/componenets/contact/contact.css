@@ -1,0 +1,49 @@
+.contacterNous {
+    background-image: url('../../assets/img/contactImg.avif');
+    background-size: cover;
+    position: relative;
+}
+.contacterNous::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.contacterNous h2 {
+    position: relative;
+    z-index: 99;
+}
+.contacterNous Form {
+    position: relative;
+    z-index: 99;
+}
+.contacterNous Button {
+    border: none;
+    background-color: var(--main-color); 
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.contacterNous Button:hover {
+    background-color: var(--white-color); 
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+@media screen and (max-width: 767px) {
+    .contacterNous Form {
+        margin: 30px 10px;
+    }
+} 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .contacterNous Form {
+        margin: 30px 50px;
+    }
+} 
+@media screen and (min-width: 992px) {
+    .contacterNous Form {
+        margin: 30px 250px;
+    }
+} 
